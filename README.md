@@ -21,7 +21,7 @@ DIRECTORIES  | GROUPS     | USERS
 /sec         | GRP_SEC    | joao, roberto, rogerio
 
 <p align="left">[X] Create a VM</p>
-<p align="left">[ ] All provisioning must be done in a bash script-type file</p>
+<p align="left">[X] All provisioning must be done in a bash script-type file</p>
 <p align="left">[ ] root will be the owner of all created directories and will be</p>
 <p align="left">[ ] All users will have full permissions on the public directory</p>
 <p align="left">[ ] Users of each group will have full permissions within the respective directory referring to the department they are part of</p>
