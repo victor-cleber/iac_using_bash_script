@@ -20,7 +20,7 @@ DIRECTORIES  | GROUPS     | USERS
 /ven         | GRP_VEN    | maria, sebastiana, amanda
 /sec         | GRP_SEC    | joao, roberto, rogerio
 
-<p align="left">[ ] Create a VM</p>
+<p align="left">[X] Create a VM</p>
 <p align="left">[ ] All provisioning must be done in a bash script-type file</p>
 <p align="left">[ ] root will be the owner of all created directories and will be</p>
 <p align="left">[ ] All users will have full permissions on the public directory</p>
