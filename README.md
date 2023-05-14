@@ -15,7 +15,7 @@
 
 DIRECTORIES  | GROUPS     | USERS
 -------------|------------|--------
-/public      | all groups | all users 
+/public      | all groups | all users
 /adm         | GRP_ADM    | carlos, debora, josefina
 /ven         | GRP_VEN    | maria, sebastiana, amanda
 /sec         | GRP_SEC    | joao, roberto, rogerio
@@ -24,8 +24,8 @@ DIRECTORIES  | GROUPS     | USERS
 <p align="left">[X] All provisioning must be done in a bash script-type file</p>
 <p align="left">[X] The user root will be the owner of all created directories</p>
 <p align="left">[X] All users will have full permissions on the public directory</p>
-<p align="left">[ ] Users of each group will have full permissions within the respective directory referring to the department they are part of</p>
-<p align="left">[ ] The user cannot read, write or execute permissions on directories of departments that they do not belong to</p>
+<p align="left">[X] Users of each group will have full permissions within the respective directory referring to the department they are part of</p>
+<p align="left">[X] An user cannot read, write or execute permissions on directories of departments that they do not belong to</p>
 <p align="left">[ ] Tag Denilson on [Linkedin](www.linkedin.com/in/denilsonbonatti)</p>
 
 ## :memo: License

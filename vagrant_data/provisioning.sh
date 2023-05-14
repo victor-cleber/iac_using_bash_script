@@ -37,17 +37,6 @@ sudo useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd Senha123) 
 sudo passwd rogerio -e
 
 
-echo "Adding users to its respective groups..."
-#sudo usermod -G GRP_ADM carlos
-#sudo usermod -G GRP_ADM debora
-#sudo usermod -G GRP_ADM josefina
-#sudo usermod -G GRP_VEN maria
-#sudo usermod -G GRP_ADM sebastiana
-#sudo usermod -G GRP_ADM amanda
-#sudo usermod -G GRP_SEC joao
-#sudo usermod -G GRP_ADM roberto
-#sudo usermod -G GRP_ADM rogerio
-
 #All users will have full permissions on the public directory
 sudo chmod o+wrx /public
 
