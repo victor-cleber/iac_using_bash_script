@@ -15,25 +15,34 @@ groupadd GRP_VEN
 groupadd GRP_SEC
 
 echo "Creating users ..."
-sudo useradd carlos -c "Carlos" -m -s /bin/bash -p $(openssl passwd Senha123) -g GRP_ADM
+sudo useradd carlos -c "Carlos" -m -s /bin/bash -p $(openssl passwd Senha123)
+sudo usermod -G GRP_ADM carlos
 sudo passwd carlos -e
-sudo useradd debora  -c "Debora" -m -s /bin/bash -p $(openssl passwd Senha123) -g GRP_ADM
+sudo useradd debora  -c "Debora" -m -s /bin/bash -p $(openssl passwd Senha123)
+sudo usermod -G GRP_ADM debora
 sudo passwd debora -e
-sudo useradd josefina  -c "Josefina" -m -s /bin/bash -p $(openssl passwd Senha123) -g GRP_ADM
+sudo useradd josefina  -c "Josefina" -m -s /bin/bash -p $(openssl passwd Senha123)
+sudo usermod -G GRP_ADM josefina
 sudo passwd josefina -e
 
-sudo useradd maria -c "Josefina" -m -s /bin/bash -p $(openssl passwd Senha123) -g GRP_VEN
+sudo useradd maria -c "Maria" -m -s /bin/bash -p $(openssl passwd Senha123)
+sudo usermod -G GRP_VEN maria
 sudo passwd maria -e
-sudo useradd sebastiana -c "Sebastiana" -m -s /bin/bash -p $(openssl passwd Senha123) -g GRP_VEN
+sudo useradd sebastiana -c "Sebastiana" -m -s /bin/bash -p $(openssl passwd Senha123) 
+sudo usermod -G GRP_VEN sebastiana
 sudo passwd sebastiana -e
-sudo useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl passwd Senha123) -g GRP_VEN
+sudo useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl passwd Senha123)
+sudo usermod -G GRP_VEN amanda
 sudo passwd amanda -e
 
-sudo useradd joao -c "Joao" -m -s /bin/bash -p $(openssl passwd Senha123) -g GRP_SEC
+sudo useradd joao -c "Joao" -m -s /bin/bash -p $(openssl passwd Senha123)
+sudo usermod -G GRP_SEC joao
 sudo passwd joao -e
-sudo useradd roberto -c "Roberto" -m -s /bin/bash -p $(openssl passwd Senha123) -g GRP_SEC
+sudo useradd roberto -c "Roberto" -m -s /bin/bash -p $(openssl passwd Senha123)
+sudo usermod -G GRP_SEC roberto
 sudo passwd roberto -e
-sudo useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd Senha123) -g GRP_SEC
+sudo useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd Senha123)
+sudo usermod -G GRP_SEC rogerio
 sudo passwd rogerio -e
 
 
@@ -51,5 +60,5 @@ sudo chmod o-wrx /adm
 sudo chmod o-wrx /ven
 sudo chmod o-wrx /sec
 
-echo "Fixing passwd: Authentication token manipulation error"
+echo "Reboot to fix passwd: Authentication token manipulation error"
 sudo reboot
