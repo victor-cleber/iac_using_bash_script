@@ -23,3 +23,9 @@ useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_
 useradd joao -c "Joao" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_SEC
 useradd roberto -c "Roberto" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_SEC
 useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_SEC
+
+
+echo "Adding users to it respective groups..."
+usermod -G GRP_ADM carlos, debora, josefina
+usermod -G GRP_VEN maria, sebastiana, amanda
+usermod -G GRP_SEC joao, roberto, rogerio
