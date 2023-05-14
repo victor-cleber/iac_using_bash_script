@@ -3,6 +3,12 @@
 echo "Creating directories ..."
 mkdir /public /adm /ven /sec
 
+
+echo "Changing the owner to root for of all created directories"
+chown root /adm/
+chown root /ven/
+chown root /sec/
+
 echo"The user root will be the owner of all created directories"
 chown root /public
 chown root /adm 
@@ -16,16 +22,25 @@ groupadd GRP_SEC
 
 echo "Creating users ..."
 useradd carlos -c "Carlos" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_ADM
+passwd carlos -e
 useradd debora  -c "Debora" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_ADM
+passwd debora -e
 useradd josefina  -c "Josefina" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_ADM
+passwd josefina -e
 
 useradd maria -c "Josefina" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_VEN
+passwd maria -e
 useradd sebastiana -c "Sebastiana" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_VEN
+passwd sebastiana -e
 useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_VEN
+passwd amanda -e
 
 useradd joao -c "Joao" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_SEC
+passwd joao -e
 useradd roberto -c "Roberto" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_SEC
+passwd roberto -e
 useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_SEC
+passwd rogerio -e
 
 
 echo "Adding users to it respective groups..."
