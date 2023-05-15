@@ -9,11 +9,12 @@ mkdir /public /adm /ven /sec
 #chown root /ven
 #chown root /sec
 
-echo "Creating groups ..."
+echo "Creating groups..."
 groupadd GRP_ADM
 groupadd GRP_VEN
 groupadd GRP_SEC
 
+echo "Changing directory group owner..."
 chown :GRP_ADM  /adm
 chown :GRP_VEN /ven
 chown :GRP_SEC /sec
