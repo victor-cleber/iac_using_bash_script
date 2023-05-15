@@ -35,7 +35,7 @@ GRP_SEC (joao, roberto, rogerio) | w, r, x|||                             w, r, 
 
 <p align="left">[X] Users of each group will have full permissions within the respective directory referring to the department they are part of</p>
 <p align="left">[X] An user cannot read, write or execute permissions on directories of departments that they do not belong to</p>
-<p align="left">[ ] Tag Denilson on [Linkedin](www.linkedin.com/in/denilsonbonatti)</p>
+<p align="left">[X] Tag Denilson on [Linkedin](www.linkedin.com/in/denilsonbonatti)</p>
 
 ## :memo: License
 
