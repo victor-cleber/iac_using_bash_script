@@ -65,7 +65,13 @@ Vagrant.configure("2") do |config|
     # Enable provisioning with a shell script. Additional provisioners such as
     # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
     # documentation for more information about their specific syntax and use.
-    config.vm.provision "shell", path: "vagrant_data/provisioning.sh"
+    #config.vm.provision "shell", path: "vagrant_data/provisioning.sh"
+
+    $script = <<-SCRIPT
+      echo "Provisioning my vm..."
+      sudo /vagrant_data/provisioning.sh      
+    SCRIPT
+    config.vm.provision "shell", inline: $script
     #config.vm.provision "shell", inline: <<-SHELL
       #apt-get update
       #apt-get install -y apache2
