@@ -1,4 +1,4 @@
-echo "removing users..."
+echo "Removing users..."
 userdel -r -f carlos
 userdel -r -f debora
 userdel -r -f josefina
@@ -11,13 +11,12 @@ userdel -r -f joao
 userdel -r -f roberto
 userdel -r -f rogerio
 
-
-echo "removing directories..."
+echo "Removing directories..."
 rm -rf /public /adm /ven /sec
 
-echo "removing groups..."
-sudo groupdel GRP_ADM
-sudo groupdel GRP_VEN
-sudo groupdel GRP_SEC
+echo "Removing groups..."
+groupdel GRP_ADM
+groupdel GRP_VEN
+groupdel GRP_SEC
 
 
