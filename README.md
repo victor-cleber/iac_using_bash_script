@@ -13,6 +13,10 @@
 
 ## 🚀 Project
 
+<p align="left">[X] Create a VM</p>
+<p align="left">[X] All provisioning must be done in a bash script-type file</p>
+<p align="left">[X] The user root will be the owner of all created directories</p>
+
 DIRECTORIES  | GROUPS     | USERS
 -------------|------------|--------
 /public      | all groups | all users
@@ -20,10 +24,7 @@ DIRECTORIES  | GROUPS     | USERS
 /ven         | GRP_VEN    | maria, sebastiana, amanda
 /sec         | GRP_SEC    | joao, roberto, rogerio
 
-<p align="left">[X] Create a VM</p>
-<p align="left">[X] All provisioning must be done in a bash script-type file</p>
-<p align="left">[X] The user root will be the owner of all created directories</p>
-<p align="left">[X] All users will have full permissions on the public directory</p>
+<p align="left">[X] All users have full permissions on the public directory</p>
 
 
 | user                                    |    /public | /adm | /ven |  /sec
@@ -33,9 +34,9 @@ GRP_ADM (carlos, debora, josefina)| w, r, x |w, r, x |
 GRP_VEN  (josefina, sebastiana, amanda) | w, r, x| | w, r, x|
 GRP_SEC (joao, roberto, rogerio) | w, r, x|||                             w, r, x
 
-<p align="left">[X] Users of each group will have full permissions within the respective directory referring to the department they are part of</p>
+<p align="left">[X] Users of each group have full permissions within the respective directory referring to the department they are part of</p>
 <p align="left">[X] An user cannot read, write or execute permissions on directories of departments that they do not belong to</p>
-<p align="left">[X] Tag Denilson on [Linkedin](www.linkedin.com/in/denilsonbonatti)</p>
+<p align="left">[X] Tag <a href="www.linkedin.com/in/denilsonbonatti">Denilson</a> on Linkedin</p>
 
 ## :memo: License
 
